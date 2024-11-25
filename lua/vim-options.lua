@@ -29,3 +29,5 @@ vim.opt.numberwidth = 5
 
 vim.opt.guifont = "MesloLGS NF:h12" -- Adjust the font size as needed
 
+vim.api.nvim_set_keymap('n', '<Leader>vs', ':vsplit<CR>', {})
+vim.api.nvim_set_keymap('n', '<Leader>hs', ':split<CR>', {})
