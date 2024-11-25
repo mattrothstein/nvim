@@ -19,9 +19,13 @@ vim.keymap.set("n", "<Down>", "<NOP>")
 vim.keymap.set("n", "<Left>", "<NOP>")
 vim.keymap.set("n", "<Right>", "<NOP>")
 
+-- copy to system clipboard
+vim.keymap.set({ "n", "v", "x" }, "<leader>cp", '"+y')
+
 vim.api.nvim_create_user_command("Q", "quit", { bang = true })
 
 vim.opt.number = true
 vim.opt.numberwidth = 5
 
-vim.fn.setenv('PATH', vim.fn.expand('/opt/homebrew/opt/ruby/bin:$PATH'))
+vim.opt.guifont = "MesloLGS NF:h12" -- Adjust the font size as needed
+
