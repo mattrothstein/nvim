@@ -8,6 +8,7 @@ return {
   },
   config = function()
     vim.keymap.set("n", "<leader>nt", ":Neotree toggle<CR>", {})
+    vim.keymap.set("n", "<leader>nf", ":Neotree reveal<CR>", {})
     vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
   end,
 }
