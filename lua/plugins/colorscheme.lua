@@ -9,7 +9,7 @@ return {
     "Mofiqul/dracula.nvim",
     lazy = false,
     name = "dracula",
-    priority = 1001,
+    priority = 100,
     config = function()
       vim.cmd.colorscheme("dracula")
     end,
