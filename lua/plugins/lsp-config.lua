@@ -1,5 +1,10 @@
 return {
   {
+    "vim-ruby/vim-ruby",
+    lazy = true,
+    ft = { "ruby" },
+  },
+  {
     "williamboman/mason.nvim",
     lazy = false,
     config = function()

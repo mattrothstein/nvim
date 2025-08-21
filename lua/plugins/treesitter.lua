@@ -11,4 +11,12 @@ return {
 			})
 		end,
 	},
+  {
+    "AndrewRadev/splitjoin.vim",
+    lazy = true,
+    keys = {
+      { "gS", ":SplitjoinSplit<CR>", desc = "Split one-liner to multi-line" },
+      { "gJ", ":SplitjoinJoin<CR>", desc = "Join multi-line to one-liner" },
+    },
+  },
 }
